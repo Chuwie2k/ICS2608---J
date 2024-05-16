@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="default-style" content="/design.css">
+    <title>ISCP Registration Form</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar navbar-style">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#drop">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+
+            <a href=""><img class="logo" src="img/logo.png"></a></div>
+            <div class="collpase navbar-collapse" id="drop">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Campus</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="form.html">Enrollment</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <form class="form" onsubmit="return validateForm()">
+        <div class="contact-info-container">
+            <img src="img/logo3.png" alt="ISCP">
+                <p class="big-text">International State Colleges of the Philippines</p>
+                <p class="big-text">Enrollment Form</p> <br>
+            
+            <div class="row2">
+                Address for: 
+                <input type="radio" class="input-radio" placeholder="" name="adtype" >Home
+                <input type="radio" class="input-radio" placeholder="" name="adtype" >Business <br><br>
+            </div>
+            <div class="row 1">
+                First Name:*
+                <input id="fName" type="text" class="input-text" placeholder="Enter First Name" ><br><br>
+            </div>
+            <div class="row2">
+                Last Name:*
+                <input id="lName" type="text" class="input-text" placeholder="Enter Last Name" > <br><br>
+            </div>
+            <div class="row 1">
+                Address:*
+                <input id="address" type="text" class="input-address" placeholder="Enter Address" > <br><br>
+            </div>
+            <div class="row 1">
+                Cellphone Number:*
+                <input id="cpNumber" type="text" class="input-text" maxlength="11" placeholder="Enter Cellphone Number " > <br><br>
+            </div>
+            <div class="row 1">
+                City:*
+                <input id="city" type="text" class="input-text" placeholder="Enter City" > <br><br>
+            </div>
+            <div class="row2">
+                Region:* 
+                <input id="region" type="text" class="input-text" placeholder="Enter Region" > <br><br>
+            </div>
+            <div class="row1-last">
+                Zip Code:* 
+                <input id="zip" type="text" class="input-text" placeholder="Enter Zip Code" > <br><br>
+            </div>
+        </div>
+            <div class="row3">
+                Student ID:*
+                <input id="sID" type="text" class="input-text" placeholder="Enter Student Number" > <br><br>
+            </div>
+            <div class="row3">
+                Program:*
+                <input id="program" type="text" class="input-text" placeholder="Enter Program" > <br><br>
+            </div>
+            <div class="row3">
+                Year:*  
+                <select name="year" id="year" class="selection"> 
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="4th">4th Year</option>
+                </select>
+            </div>
+            <br>
+            <div class="row3">
+                Birthday:
+                    <input type="date" id="birthday" class="selection" name="birthday"/> <br><br>
+            </div>
+
+        </div>
+        <p class="form-section-title">Comments</p>
+            <div class="row2">
+                <textarea class="textarea" name="" id="" cols="70" rows="10" placeholder="Please Enter your Comments here..."></textarea>
+            </div>
+        </div>
+
+        <button class="lastbtn" type="submit" id="btnSubmit">Submit Records</button>
+        <button class="lastbtn" type="button" id="btnCancel" onclick="clearfield()">Cancel</button>
+           
+        </div>
+  
+        </body>
+</html>  
